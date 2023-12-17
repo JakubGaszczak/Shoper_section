@@ -8,11 +8,16 @@
 
 .approach {
   position: relative;
+  display: flex;
+  justify-content: center;
   margin: 5rem 0;
   padding: 1rem;
 
   background: linear-gradient(180deg, #f5f5f5 0%, #e8e8e8 100%);
-  z-index: -999;
+}
+
+.approach__container {
+  max-width: 1180px;
 }
 
 .approach::before {
@@ -86,7 +91,7 @@
 }
 
 .myButton {
-  display: flex;
+  display: inline-flex;
   align-items: center;
   gap: 0.5rem;
   padding: 0.625rem 0.938rem;
