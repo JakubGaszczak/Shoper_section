@@ -1,0 +1,84 @@
+@import url("https://fonts.googleapis.com/css2?family=Gloock&family=Lora:wght@400;700&family=Open+Sans&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.promBanner {
+  display: flex;
+  background: rgba(254, 212, 189, 1);
+  height: 3.125rem;
+}
+
+.promBanner__container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+
+  max-width: 1180px;
+  width: 100%;
+  margin: auto;
+  padding: 0 1rem;
+}
+
+.promBanner__title {
+  font-family: "Lora", sans-serif;
+  font-size: 1rem;
+  text-transform: uppercase;
+  min-width: 12.5rem;
+}
+
+.promBanner__line {
+  height: 0.1rem;
+  max-width: 23.375rem;
+  width: 100%;
+
+  border: none;
+  background: rgba(250, 182, 145, 1);
+}
+
+.myButton {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.625rem 0.938rem;
+
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+
+  text-transform: capitalize;
+  transition: 500ms;
+  border: none;
+  color: #ffffff;
+  background-color: black;
+  cursor: pointer;
+}
+
+.myButton:hover {
+  background-color: #333;
+  color: #fff;
+}
+.myButton:active {
+  position: relative;
+  top: 1px;
+}
+
+@media screen and (max-width: 640px) {
+  .promBanner__title {
+    font-size: 0.75rem;
+  }
+
+  .promBanner__img {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 400px) {
+    .promBanner__line {
+        display: none;
+    }
+}
