@@ -9,7 +9,6 @@
 .promBanner {
   display: flex;
   background: rgba(254, 212, 189, 1);
-  height: 3.125rem;
 }
 
 .promBanner__container {
@@ -68,6 +67,10 @@
 }
 
 @media screen and (max-width: 640px) {
+    .promBanner {
+        padding: .5rem 0;
+    }
+
   .promBanner__title {
     font-size: 0.75rem;
   }
